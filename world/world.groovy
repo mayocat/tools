@@ -65,7 +65,7 @@ while (keep_going) {
   def to_remove = []
   for (entry in sorted) {
     if (entry.value.code.size() == 2) {
-      
+      entry.value.remove("parent")
     }
     else if (entry.value.parent) {
       def children = entry.value
